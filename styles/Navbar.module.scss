@@ -1,0 +1,28 @@
+.nav {
+  font-size: large;
+  overflow: hidden;
+  background-color: #171717;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  ul {
+    text-align: center;
+    padding: 1.5rem;
+    li {
+      display: inline;
+
+      &:first-child {
+        float: left;
+      }
+
+      a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 1.4rem;
+        &:hover {
+          background-color: #232323;
+        }
+      }
+    }
+  }
+}

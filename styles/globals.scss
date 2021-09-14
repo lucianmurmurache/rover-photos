@@ -60,12 +60,13 @@ h6 {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 784px) {
-  ul {
-    list-style-type: none;
-  }
+ul {
+  list-style-type: none;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 784px) {
 }

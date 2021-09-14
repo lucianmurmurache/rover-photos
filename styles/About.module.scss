@@ -4,10 +4,21 @@
   background-color: #171717;
   padding: 1.5rem;
   width: 100%;
+  background: linear-gradient(to right bottom, rgba(85, 85, 85, 0.1), #171717),
+    url('../assets/cur_rover_opt.webp') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   p {
-    color: #fff;
+    color: #fefefe;
     width: fit-content;
-    margin: 5rem auto;
+    margin: 0 auto;
   }
 }

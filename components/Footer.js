@@ -1,23 +1,22 @@
-import Link from 'next/link';
 import styles from '../styles/Footer.module.scss';
 
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <Link
+      <a
         href='https://github.com/lucianmurmurache'
         target='_blank'
         rel='noopener noreferrer nofollow'
       >
         Github
-      </Link>
-      <Link
+      </a>
+      <a
         href='https://api.nasa.gov/'
         target='_blank'
         rel='noopener noreferrer nofollow'
       >
         NASA API
-      </Link>
+      </a>
     </footer>
   );
 }

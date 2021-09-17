@@ -1,0 +1,20 @@
+.btn {
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  background: inherit;
+  color: #fefefe;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  transition: all ease 320ms;
+
+  &:hover {
+    background-color: #232323;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--background-color-primary);
+  }
+}

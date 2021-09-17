@@ -8,13 +8,27 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('../assets/cur_rover_opt.webp') no-repeat center center fixed;
+  background: linear-gradient(to right bottom, rgba(85, 85, 85, 0.1), #171717),
+    url('../assets/cur_rover_opt.webp') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
 
-.heading {
-  color: #fefefe;
+  h1 {
+    color: #fefefe;
+  }
+
+  p {
+    color: #fefefe;
+
+    a {
+      color: inherit;
+      transition: filter 320ms ease;
+
+      &:hover {
+        filter: opacity(0.7);
+      }
+    }
+  }
 }

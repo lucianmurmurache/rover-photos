@@ -3,6 +3,7 @@ import styles from '../../styles/Images.module.scss';
 
 import Button from '../../components/Button';
 import Loading from '../../components/Loading';
+import ScrollToTop from '../../components/ScrollToTop';
 
 Images.title = 'Rover Images';
 Images.description =
@@ -15,12 +16,10 @@ function Images() {
 
   const nextSol = () => {
     setSol(sol + 1);
-    console.log(sol);
   };
 
   const prevSol = () => {
     setSol(sol - 1);
-    console.log(sol);
   };
 
   useEffect(() => {
@@ -30,18 +29,14 @@ function Images() {
       .then((response) => response.json())
       .then((result) => {
         setIsLoaded(true);
-        console.log(result);
         setItems(result);
       })
       .catch((error) => {
         setError(error);
-        console.log(error.message);
       });
-    console.log(items);
   }, [sol]);
 
   const { photos } = items;
-  console.log(photos);
 
   if (error) {
     return <p>{error.message}</p>;
@@ -66,12 +61,13 @@ function Images() {
                   <p>Landing date: {rover.landing_date}</p>
                   <p>Status: {rover.status}</p>
                   <p>Camera: {camera.full_name}</p>
-                  <p>{earth_date}</p>
+                  <p>Caption date: {earth_date}</p>
                   <img src={img_src} alt={img_src} />
                 </li>
               );
             })}
         </ul>
+        <ScrollToTop />
       </section>
     );
   }
